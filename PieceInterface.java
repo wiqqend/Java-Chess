@@ -1,3 +1,6 @@
-public class PieceInterface {
+interface PieceInterface {
+    public void move();
+    public void capture();
     
+
 }
