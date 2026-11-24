@@ -52,6 +52,8 @@ public abstract class Piece {
         p.hasMoved = hasMoved;
         return p;
     }
-
-    
+    protected void addMoves(Board board, int row, int col, int[][] directions, boolean slide, List<int[]> moves){
+        // Implementation for adding moves based on the piece's movement rules
+        
+    }
 }
