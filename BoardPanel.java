@@ -1,3 +1,4 @@
-public class BoardPanel{
+import javax.swing.*;
+public class BoardPanel extends JPanel {
     
 }

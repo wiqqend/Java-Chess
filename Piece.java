@@ -1,8 +1,4 @@
-public class Piece implements PieceInterface{
-    
-    public void move() {
-    }
+import java.util.List;
+public abstract class Piece {
 
-    public void capture() {
-    }
 }
