@@ -7,5 +7,7 @@ public class ChessWindow extends JFrame {
         setSize(800, 700);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
+
+        add(new BoardPanel());
     }
 }
