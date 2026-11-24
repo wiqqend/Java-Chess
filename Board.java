@@ -1,4 +1,4 @@
 import java.util.List;
-public class Board {
-
+public class Board implements ChessBackend{
+    //gets game state of board 
 }
