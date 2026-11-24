@@ -12,5 +12,4 @@ public interface ChessBackend {
     boolean undo();
     List<String> getMoveHistory();
     List<String> getCapturedPieces(boolean byWhite);
-    int[] getLastMove();
 }
