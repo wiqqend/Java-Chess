@@ -1,4 +1,5 @@
 import java.util.List;
+
 public abstract class Piece {
     protected static final int[][] NESW = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
     protected static final int[][] DIAG = {{1, 1}, {1, -1}, {-1, 1}, {-1, -1}};
@@ -35,4 +36,22 @@ public abstract class Piece {
     public void setMoved(boolean moved) {
         hasMoved = moved;
     }
+    public abstract char getType();
+
+    public String getCode() {
+        return "" + color + getType();
+    }
+    public abstract List<int[]> getMoves(Board board, int row, int col);
+
+    public List<int[]> getAttacks(Board board, int row, int col) {
+        return getMoves(board, row, col);
+    }
+
+    public Piece copy() {
+        Piece p = create(color, getType());
+        p.hasMoved = hasMoved;
+        return p;
+    }
+
+    
 }
