@@ -1,4 +1,4 @@
-import java.util.List;
 public interface ChessBackend {
-
+    String getPieceAt(int row, int col);
+    
 }

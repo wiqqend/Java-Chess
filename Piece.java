@@ -1,3 +1,4 @@
+import java.util.List;
 public abstract class Piece {
     protected static final int[][] NESW = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
     protected static final int[][] DIAG = {{1, 1}, {1, -1}, {-1, 1}, {-1, -1}};
